@@ -1,0 +1,38 @@
+
+.get-started__ {
+
+  &main-background {
+    padding: 64px 0;
+    background-image: url("../../../../global/images/getStartedImg/main-background.svg");
+    background-size: cover;
+  }
+
+  &background {
+    padding: 214px 0;
+    background-image: url("../../../../global/images/getStartedImg/background.svg");
+    background-size: cover;
+  }
+
+  &blocks {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    height: 100%;
+  }
+
+  &block-one {
+    position: relative;
+  }
+
+  &block-two {
+    margin-top: -370px;
+    margin-left: 120px;
+  }
+
+  &block-three {
+    margin-top: -465px;
+    margin-left: 60px;
+  }
+}
+

@@ -1,0 +1,56 @@
+.our-partners__ {
+
+  &container-background {
+    background-image: url("../../../../global/images/ourPartnersImg/bg partners.svg");
+    background-size: cover;
+    padding: 192px 80px 80px;
+  }
+
+  &block-logos {
+    margin-top: 100px;
+
+    img {
+      object-fit:cover;
+      width: 100px;
+    }
+  }
+
+  &partner-logo {
+    display: flex;
+    justify-content: start;
+    width: 100px;
+  }
+
+  &title {
+    color: #ffff;
+    font-size: 40px;
+
+  }
+
+  &subtitle{
+    color: #ffff;
+    font-size: 20px;
+    padding-top: 16px;
+    max-width: 416px;
+  }
+
+  &info-block {
+    padding: 150px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+
+  &title-2 {
+    color: #FF4550;
+    font-size: 32px;
+  }
+
+  &description {
+    color: #ffff;
+    font-size: 20px;
+    padding: 13px 0 46px 0;
+    max-width: 630px;
+    text-align: end;
+  }
+}

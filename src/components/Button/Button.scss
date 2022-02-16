@@ -1,0 +1,119 @@
+@keyframes glitch-test {
+  0% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  5.88235% {
+    clip: rect(0px, 600px, 0px, 0px);
+  }
+  11.76471% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  17.64706% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  23.52941% {
+    clip: rect(100px, 600px, 100px, 0px);
+  }
+  29.41176% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+  35.29412% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+  41.17647% {
+    clip: rect(0px, 600px, 600px, 0px);
+  }
+  47.05882% {
+    clip: rect(100px, 600px, 0px, 0px);
+  }
+  52.94118% {
+    clip: rect(-3px, 600px, 0px, 0px);
+  }
+  58.82353% {
+    clip: rect(100px, 450px,100px, 0px);
+  }
+  64.70588% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  70.58824% {
+    clip: rect(100px, 450px, 100px, 0px);
+  }
+  76.47059% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  82.35294% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  88.23529% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  94.11765% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+  100% {
+    clip: rect(0px, 450px, 0px, 0px);
+  }
+}
+
+.button__ {
+
+  &container {
+    background: #3823D2;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 452px;
+    text-align: center;
+    transition: all .2s ease;
+    display: block;
+    position: relative;
+  }
+
+
+  &text {
+    color: #ffff;
+    font-size: 20px;
+    line-height: 24px;
+    padding: 15px 50px;
+    &:before,
+    &:after {
+      content: ' ';
+      position: absolute;
+      top: 0;
+      left: 0;
+      padding: 8px 0;
+      width: 100%;
+      -webkit-clip: rect(0px, 0px, 0px, 0px);
+      clip: rect(0px, 0px, 0px, 0px);
+      background: #3823D2;
+      color: white;
+    }
+
+    &:before {
+      left: -3px;
+      top: -2px;
+      text-shadow: 2px 0 #fff;
+      box-shadow: 2px 0 #fff;
+    }
+
+    &:after {
+      left: 2px;
+      bottom: -2px;
+      text-shadow: -1px 0 #fff;
+      box-shadow: -1px 0 #fff;
+    }
+
+    &:hover {
+      background: #3823D2;
+      color: white;
+    }
+
+    &:hover:before {
+      animation: glitch-test 1.5s infinite linear alternate-reverse;
+    }
+
+    &:hover:after {
+      animation: glitch-test 1s infinite linear alternate;
+    }
+
+  }
+}

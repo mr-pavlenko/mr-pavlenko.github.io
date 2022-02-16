@@ -1,0 +1,36 @@
+.our-products__ {
+
+  &top-background {
+    background-image: url("../../../../global/images/ourProductsImg/bottom-background.svg");
+    background-size: cover;
+    padding: 45px;
+  }
+
+  &bottom-background {
+    background-image: url("../../../../global/images/ourProductsImg/top-background.svg");
+    background-size: cover;
+    padding: 45px;
+  }
+
+  &title {
+    font-size: 40px;
+    margin: -20px 0 ;
+  }
+
+  &info_block {
+    background: #000000;
+    padding: 80px 0 89px 80px;
+    display: grid;
+    grid-template-rows: 1fr 1fr ;
+    grid-template-columns: 1fr 1fr 1fr;
+    :nth-child(3n){
+      margin-top: -48px;
+      grid-gap: 0;
+    }
+  }
+
+  &white-block {
+    padding: 45px 0 45px 80px;
+  }
+
+}

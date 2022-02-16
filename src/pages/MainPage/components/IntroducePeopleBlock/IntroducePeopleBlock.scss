@@ -1,0 +1,28 @@
+.introduce-people__ {
+
+  &background {
+    background: url("../../../../global/images/introducePeopleImg/Group 32.svg") no-repeat  ;
+    background-size: cover;
+    height: 100vh;
+    padding-bottom: 100px;
+    margin-top: -1px;
+  }
+
+  &container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+  }
+
+  &info-block {
+    padding: 0 80px;
+  }
+
+  &title {
+    max-width: 550px;
+    font-size: 40px;
+    line-height: 48px;
+    padding-bottom: 35px;
+  }
+
+}

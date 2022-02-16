@@ -9,7 +9,12 @@ const GetStartedBlock = () => {
       <div className="get-started__background">
         <div className="get-started__blocks">
           <div className="get-started__block">
-            <div className="get-started__block-one">
+            <div
+              className="get-started__block-one"
+              data-aos="zoom-in"
+              data-aos-delay="850"
+              data-aos-duration="1000"
+            >
               <GetStarted
                 url={constants.URL}
                 title={constants.TITLE}
@@ -17,11 +22,16 @@ const GetStartedBlock = () => {
                 secondInfo={constants.SECOND_INFO}
               />
             </div>
-            <div className="get-started__block-two ">
+            <div className="get-started__block-two " data-aos="zoom-in" data-aos-duration="1000">
               {' '}
               <GetStarted />{' '}
             </div>
-            <div className="get-started__block-three">
+            <div
+              className="get-started__block-three"
+              data-aos="zoom-in"
+              data-aos-delay="450"
+              data-aos-duration="1000"
+            >
               {' '}
               <GetStarted />{' '}
             </div>

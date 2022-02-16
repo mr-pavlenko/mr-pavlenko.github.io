@@ -63,6 +63,84 @@
   }
 
   &line-img-down {
+    height: 214px;
+    -moz-transform: scale(1,-1);
+    -webkit-transform: scale(1, -1);
+    -o-transform: scale(1, -1);
+    transform: scale(1, -1);
+    -ms-filter: "FlipV";
+    margin: 0 0 -90px -30px
+  }
+  img {
+    max-width: 230px;
+  }
+
+}
+.data-ownership__ {
+
+  &background{
+    background-image: url("../../../../global/images/dataOwnerShipImg/background.jpeg");
+    background-size: cover;
+    padding-bottom: 120px;
+    height: 100vh;
+  }
+
+  &title-block {
+    color: #ffff;
+    padding: 120px 0 0 80px ;
+  }
+
+  &title {
+    font-size: 40px;
+    line-height: 48px;
+  }
+
+  &subtitle {
+    font-size: 20px;
+    line-height: 32px;
+    padding: 16px 0 20px;
+  }
+
+  &info-block {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 80px;
+    background-size: cover;
+    padding: 0 80px 120px 80px;
+  }
+
+  &info-title {
+    font-size: 32px;
+    line-height: 38px;
+    color: #CA359F;
+    max-width: 260px;
+    padding-bottom: 20px;
+  }
+
+  &info-description {
+    font-size: 20px;
+    color: #FFFFFF;
+    max-width: 444px;
+  }
+
+  &info-first {
+    padding-top: 152px;
+  }
+
+  &info-second {
+    padding-top: 264px;
+  }
+
+  &info-third {
+    max-width: 444px;
+    padding: 92px 16px 0 0;
+  }
+
+  &line-img-up {
+    margin: -85px 0 0 -30px
+  }
+
+  &line-img-down {
     -moz-transform: scale(1,-1);
     -webkit-transform: scale(1, -1);
     -o-transform: scale(1, -1);

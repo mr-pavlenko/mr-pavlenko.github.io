@@ -2,7 +2,7 @@
   "name": "dataverse",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://mr-pavlenko.github.io/dataverse-done",
+  "homepage": "https://mr-pavlenko.github.io/dataverse",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
@@ -27,7 +27,7 @@
     "lint:fix": "eslint --fix",
     "prettier:fix": "prettier --write './**/*.{js,jsx,ts,tsx,css,md,json}' --config ./.prettierrc",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -b main -d build"
+    "deploy": "gh-pages -b dev -d build"
   },
   "eslintConfig": {
     "extends": [

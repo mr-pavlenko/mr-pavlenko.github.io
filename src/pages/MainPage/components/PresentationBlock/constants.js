@@ -1,5 +1,8 @@
-export const SOCIAL_CHANNELS = 'Social Channels';
 export const CONTACT_US = 'Contact Us';
+export const REDDIT = 'reddit';
+export const TELEGRAM = 'telegram';
+export const DISCORD = 'discord';
+export const TWITTER = 'twitter';
 
 export const TITLE = 'Truly decentralized tools for web 3.0!';
 export const DESCRIPTION =

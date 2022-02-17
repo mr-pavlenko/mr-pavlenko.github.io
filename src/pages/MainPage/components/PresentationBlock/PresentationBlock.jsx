@@ -2,13 +2,32 @@ import React from 'react';
 import './PresentationBlock.scss';
 import * as constants from './constants';
 import logo from '../../../../global/images/presentationImg/logo-dataverse.svg';
+import telegramLogo from '../../../../global/images/presentationImg/icons8-telegram-app-128.png';
+import twitterLogo from '../../../../global/images/presentationImg/icons8-twitter-128.png';
+import redditLogo from '../../../../global/images/presentationImg/icons8-reddit-128.png';
+import discordLogo from '../../../../global/images/presentationImg/icons8-discord-bubble-128.png';
 
 const PresentationBlock = () => {
   const links = [
     {
       link: 'https://google.com',
-      text: constants.SOCIAL_CHANNELS,
-      key: constants.SOCIAL_CHANNELS,
+      img: redditLogo,
+      key: constants.REDDIT,
+    },
+    {
+      link: 'https://t.me/GeoDBgroup',
+      img: telegramLogo,
+      key: constants.TELEGRAM,
+    },
+    {
+      link: 'https://twitter.com/geodatablock?s=21',
+      img: twitterLogo,
+      key: constants.TWITTER,
+    },
+    {
+      link: 'https://discord.gg/Xw7pWBCA7h',
+      img: discordLogo,
+      key: constants.DISCORD,
     },
     {
       link: 'https://google.com',
@@ -36,7 +55,10 @@ const PresentationBlock = () => {
                   onClick={() => handleClick(item.link)}
                   key={item.key}
                 >
-                  {item.text}
+                  {item.text && <div>{item.text}</div>}
+                  {item.img && (
+                    <img src={item.img} alt={item.key} className="presentation__link-img" />
+                  )}
                 </div>
               ))}
             </div>

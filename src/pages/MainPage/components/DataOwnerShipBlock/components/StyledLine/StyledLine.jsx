@@ -1,5 +1,4 @@
 import React from 'react';
-import './StyledLine.scss';
 
 const StyledLine = () => {
   return (

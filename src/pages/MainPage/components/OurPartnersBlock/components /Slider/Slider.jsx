@@ -33,8 +33,8 @@ const SliderPartners = () => {
       <InfiniteCarousel
         showSides
         sidesOpacity={0}
-        animationDuration={800}
-        slidesToScroll={2}
+        animationDuration={1400}
+        slidesToScroll={1}
         slidesToShow={5}
       >
         {logos.map((item) => (
